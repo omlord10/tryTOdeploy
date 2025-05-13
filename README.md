@@ -11,12 +11,14 @@ the target file to detect potential infections.
 ## 📁 Project Structure
 
 - `antivirus.c` - Main entry point of the application.
-  - `main()` - The main function scans files for virus signatures, checks results, and reports if they're infected or safe.
-  - `is_exec()` - Verifies if a file is executable or not.
-  - `read_signature()` - Reads the virus signature from a text file.
-  - `scan_file()` - Checks the specified file for the presence of the signature.
-  - `calculate_file_size()` - Determines the file size to ensure a valid offset.
-  - `VirusSignature` - Structure for storing the signature, offset, and name.
+  - Functions:
+    - `main()` - The main function scans files for virus signatures, checks results, and reports if they're infected or safe.
+    - `is_exec()` - Verifies if a file is executable or not.
+    - `read_signature()` - Reads the virus signature from a text file.
+    - `scan_file()` - Checks the specified file for the presence of the signature.
+    - `calculate_file_size()` - Determines the file size to ensure a valid offset.
+  - Structures:  
+    - `VirusSignature` - Structure for storing the signature, offset, and name.
 
 ## 🧬 Virus Signature Format
 
@@ -38,7 +40,7 @@ Signature file must contain exactly one line with the following format:
 
 To run the antivirus on Windows, follow these steps:
 
-1. **Download the precompiled `antivirus.exe`** from the project repository or provided link.
+1. **Download the precompiled `antivirus.exe`** from the project [repository](https://github.com/omlord10/Antivirus/releases/latest "Install with the latest version") or provided link.
 
 2. **Run the program** in the command prompt:
 
@@ -54,15 +56,16 @@ To run the antivirus on Windows, follow these steps:
     - Then, you will be asked to input the path to the file you want to scan (e.g., a `target.exe` file or another file).
 
 ### Example Output:
-    Welcome to the virus antivirus program!
-    Enter path to signature file:
-    signature.txt
-    Enter path to target file:
+    
+    Welcome to the virus antivirus program!  
+    Enter path to signature file:  
+    signature.txt  
+    Enter path to target file:  
     program.exe
-    Virus detected: SUPER-PUPER-VIRUS
+    Virus detected: SUPER-PUPER-VIRUS  
 
 ## ⚠️ Error Handling
 
-The program uses `enum`-based error codes for clear and consistent error reporting. 
+The program uses `enum`-based error codes for clear and consistent error reporting.  
 If any step fails (e.g., file not found, format invalid), the program will display a corresponding error message 
 and exit with an appropriate code.
