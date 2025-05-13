@@ -705,7 +705,7 @@ INLINE_INFO            = YES
 # name. If set to NO, the members will appear in declaration order.
 # The default value is: YES.
 
-SORT_MEMBER_DOCS       = YES
+SORT_MEMBER_DOCS       = NO
 
 # If the SORT_BRIEF_DOCS tag is set to YES then Doxygen will sort the brief
 # descriptions of file, namespace and class members alphabetically by member
@@ -992,7 +992,8 @@ WARN_LOGFILE           =
 # Note: If this tag is empty the current directory is searched.
 
 INPUT                  = ./ \
-                         README.md
+                         README.md \
+                         ../
 
 # This tag can be used to specify the character encoding of the source files
 # that Doxygen parses. Internally Doxygen uses the UTF-8 encoding. Doxygen uses
