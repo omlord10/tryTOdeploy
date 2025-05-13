@@ -6,7 +6,7 @@
 This is a basic antivirus implemented in C. It checks executable files for known
 malicious byte patterns using a signature-based approach. The antivirus reads a signature
 file containing the virus pattern, the offset, and the virus name, and then searches
-the target file to detect potential infections.
+the target file to detect potential infections
 
 ## 📁 Project Structure
 
