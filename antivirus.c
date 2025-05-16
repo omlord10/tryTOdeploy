@@ -1001,7 +1001,7 @@ int scan_file(const char *file_path, VirusSignature *vs, int *virus_flag)
         // if flag = 1 -> virus in file; else if flag = 0 -> virus not in file
         flag = 1; // virus in file
     }
-    //else flag = 0; This could be either an error in the memcmp function itself or the fact that there is no virus
+    //else flag = 0. This could be either an error in the memcmp function itself or the fact that there is no virus
     if (fclose(file) != 0)
     {
         fclose(file);
